@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/fuelup/static/css/main.b100e6da.chunk.css",
-    "main.js": "/fuelup/static/js/main.a9c0f8b2.chunk.js",
-    "main.js.map": "/fuelup/static/js/main.a9c0f8b2.chunk.js.map",
+    "main.css": "/fuelup/static/css/main.77174c2c.chunk.css",
+    "main.js": "/fuelup/static/js/main.82e094d8.chunk.js",
+    "main.js.map": "/fuelup/static/js/main.82e094d8.chunk.js.map",
     "runtime-main.js": "/fuelup/static/js/runtime-main.bf42a7d2.js",
     "runtime-main.js.map": "/fuelup/static/js/runtime-main.bf42a7d2.js.map",
-    "static/js/2.dceaf578.chunk.js": "/fuelup/static/js/2.dceaf578.chunk.js",
-    "static/js/2.dceaf578.chunk.js.map": "/fuelup/static/js/2.dceaf578.chunk.js.map",
+    "static/js/2.8c96a872.chunk.js": "/fuelup/static/js/2.8c96a872.chunk.js",
+    "static/js/2.8c96a872.chunk.js.map": "/fuelup/static/js/2.8c96a872.chunk.js.map",
     "index.html": "/fuelup/index.html",
-    "precache-manifest.d0be90a701fb59b9678abe47e114adc5.js": "/fuelup/precache-manifest.d0be90a701fb59b9678abe47e114adc5.js",
+    "precache-manifest.e85b199f2d9c055a83c24aa0ea4cc140.js": "/fuelup/precache-manifest.e85b199f2d9c055a83c24aa0ea4cc140.js",
     "service-worker.js": "/fuelup/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/fuelup/static/css/main.b100e6da.chunk.css.map"
+    "static/css/main.77174c2c.chunk.css.map": "/fuelup/static/css/main.77174c2c.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.bf42a7d2.js",
-    "static/js/2.dceaf578.chunk.js",
-    "static/css/main.b100e6da.chunk.css",
-    "static/js/main.a9c0f8b2.chunk.js"
+    "static/js/2.8c96a872.chunk.js",
+    "static/css/main.77174c2c.chunk.css",
+    "static/js/main.82e094d8.chunk.js"
   ]
 }
