@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d00c7b9b3d979c250b9add1ed925aee5",
+    "revision": "4eb16e97fd39490b41d38cc9f96d14e3",
     "url": "/fuelup/index.html"
   },
   {
-    "revision": "98253fff52a8ae7cc307",
+    "revision": "6678659b45015752d4a7",
     "url": "/fuelup/static/css/main.77174c2c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fuelup/static/js/2.15f06f07.chunk.js"
   },
   {
-    "revision": "98253fff52a8ae7cc307",
-    "url": "/fuelup/static/js/main.1f789526.chunk.js"
+    "revision": "6678659b45015752d4a7",
+    "url": "/fuelup/static/js/main.4c3b4363.chunk.js"
   },
   {
     "revision": "eaafcbb05f8174a9351c",
