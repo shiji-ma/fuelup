@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import UserInfo from "./components/UserInfo";
-import FuelInfo from "./components/FuelInfo";
-import { UserProvider } from "./components/UserContext";
-import { FuelProvider } from "./components/FuelContext";
+import fetchUrlList from "./fetchUrlList";
+import Averages from "./components/Averages";
 
 function App() {
+  const [fuelType, setFuelType] = useState("unleaded-91");
+  const [fuelInfo, setFuelInfo] = useState({ data: {} });
+
+  useEffect(() => {
+    setFuelInfo({ data: {} });
+    let fetchUrl = fetchUrlList[fuelType];
+    const getFuelData = async () => {
+      const response = await fetch(fetchUrl);
+      const responseJSON = await response.json();
+      setFuelInfo({ data: responseJSON });
+    };
+    getFuelData();
+  }, [fuelType]);
+
+  const fuelTypeChange = event => {
+    event.preventDefault();
+    setFuelType(event.target.value);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
+        <select
+          className="fuel-type"
+          id="fuel-type"
+          value={fuelType}
+          onChange={fuelTypeChange}
+        >
+          <option value="unleaded-91">Unleaded 91</option>
+          <option value="unleaded-95">Unleaded 95</option>
+          <option value="unleaded-98">Unleaded 98</option>
+          <option value="diesel">Diesel</option>
+          <option value="lpg">LPG</option>
+        </select>
       </header>
-      <main>
-        <UserProvider>
-          <UserInfo />
-        </UserProvider>
-        <FuelProvider>
-          <FuelInfo />
-        </FuelProvider>
-      </main>
+      <section>
+        <Averages fuelType={fuelType} fuelInfo={fuelInfo} />
+      </section>
     </div>
   );
 }
